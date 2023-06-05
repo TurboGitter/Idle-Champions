@@ -26,7 +26,7 @@ class IC_ServerCalls_Class
     userDetails := ""
     activePatronID := 0
     dummyData := ""
-    webRoot := "https://ps23.idlechampions.com/~idledragons/"
+    webRoot := "https://ps22.idlechampions.com/~idledragons/"
     timeoutVal := 60000
     playServerExcludes := "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"
 
@@ -202,7 +202,7 @@ class IC_ServerCalls_Class
         URLtoCall := this.webroot . "post.php?call=saveuserdetails&"
         WR := ComObjCreate( "WinHttp.WinHttpRequest.5.1" )
         ; https://learn.microsoft.com/en-us/windows/win32/winhttp/iwinhttprequest-settimeouts defaults: 0 (DNS Resolve), 60000 (connection timeout. 60s), 30000 (send timeout), 60000 (receive timeout)
-        WR.SetTimeouts( "0", "60000", "30000", "120000" )
+        WR.SetTimeouts( "0", "15000", "7500", "30000" )
         ; WR.SetProxy( 2, "IP:PORT" )  Send web traffic through a proxy server. A local proxy may be helpful for debugging web calls.
         Try {
             WR.Open( "POST", URLtoCall, true )
