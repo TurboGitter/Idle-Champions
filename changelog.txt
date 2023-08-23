@@ -1,3 +1,15 @@
+August 22, 2023
+    Updated ServerCalls to respect the play server switches.
+    Updated ServerCalls to limit server switch attempts to three.
+    Updated 64 bit Imports for v531.
+
+August 19, 2023
+   Updated 64 bit Imports for v530.
+
+August 8, 2023
+    Updated 64 bit Imports for v527.
+    Added function to show Briv's slot 4 item level.
+    Added briv's slot 4 ilvl memory read to the BrivFunctions secondary extension of MemoryFunctions addon.
 
 July 21, 2023
     Added memory functions for reading champion gear data.
