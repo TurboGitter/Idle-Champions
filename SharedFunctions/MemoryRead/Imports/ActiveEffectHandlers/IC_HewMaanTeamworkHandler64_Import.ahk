@@ -2,3 +2,7 @@
 this.HewMaanTeamworkHandler.hewmaan := New GameObjectStructure(this.HewMaanTeamworkHandler,"Int", [0x48])
 this.HewMaanTeamworkHandler.hewmaan.ultimateAttack := New GameObjectStructure(this.HewMaanTeamworkHandler.hewmaan,"Int", [0x280])
 this.HewMaanTeamworkHandler.hewmaan.ultimateAttack.ID := New GameObjectStructure(this.HewMaanTeamworkHandler.hewmaan.ultimateAttack,"Int", [0x10])
+<<<<<<< HEAD
+=======
+this.HewMaanTeamworkHandler.hewmaan.ultimateAttack.internalCooldownTimer := New GameObjectStructure(this.HewMaanTeamworkHandler.hewmaan.ultimateAttack,"Float", [0xb0])
+>>>>>>> 82d0e4fc37274b04d99f8e62717354fdb832c41e

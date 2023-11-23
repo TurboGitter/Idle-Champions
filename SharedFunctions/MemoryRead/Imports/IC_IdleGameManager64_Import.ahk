@@ -51,6 +51,10 @@ this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.CoreID := 
 this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.InstanceID := New GameObjectStructure(this.game.gameInstances.Controller.userData.ModronHandler.modronSaves,"Int", [0x4c])
 this.game.gameInstances.Controller.userData.ResetCurrencyHandler := New GameObjectStructure(this.game.gameInstances.Controller.userData,"Int", [0x78])
 this.game.gameInstances.Controller.userData.ResetCurrencyHandler.isForceConverting := New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetCurrencyHandler,"Char", [0x28])
+this.game.gameInstances.HeroHandler := New GameObjectStructure(this.game.gameInstances,"Int", [0x30])
+this.game.gameInstances.HeroHandler.allowHeroPurchase := New GameObjectStructure(this.game.gameInstances.HeroHandler,"Dict", [0x38])
+this.game.gameInstances.HeroHandler.allowHeroPurchase._CollectionKeyType := "System.Int32"
+this.game.gameInstances.HeroHandler.allowHeroPurchase._CollectionValType := "System.Boolean"
 this.game.gameInstances.Controller.userData.HeroHandler := New GameObjectStructure(this.game.gameInstances.Controller.userData,"Int", [0x10])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler,"List", [0x18])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes._CollectionValType := "CrusadersGame.GameScreen.Hero"
@@ -130,6 +134,7 @@ this.game.gameInstances.Controller.userData.StatHandler.BrivSteelbonesStacks := 
 this.game.gameInstances.Controller.userData.StatHandler.BrivSprintStacks := New GameObjectStructure(this.game.gameInstances.Controller.userData.StatHandler,"Int", [0x344])
 this.game.gameInstances.Controller.userData.StatHandler.Resets := New GameObjectStructure(this.game.gameInstances.Controller.userData.StatHandler,"Int", [0xa8])
 this.game.gameInstances.StatHandler := New GameObjectStructure(this.game.gameInstances,"Int", [0x48])
+this.game.gameInstances.StatHandler.DSpec1HeroId := New GameObjectStructure(this.game.gameInstances.StatHandler,"Int", [0x27c])
 this.game.gameInstances.StatHandler.NordomAwardedEXP := New GameObjectStructure(this.game.gameInstances.StatHandler,"Int", [0x284])
 this.game.gameInstances.ActiveCampaignData := New GameObjectStructure(this.game.gameInstances,"Int", [0x28])
 this.game.gameInstances.ActiveCampaignData.currentObjective := New GameObjectStructure(this.game.gameInstances.ActiveCampaignData,"Int", [0x18])
@@ -200,6 +205,10 @@ this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero := N
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero,"Int", [0x18])
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def.ID := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def,"Int", [0x10])
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems,"Int", [0x398])
+<<<<<<< HEAD
+=======
+this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack.internalCooldownTimer := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack,"Float", [0xb0])
+>>>>>>> 82d0e4fc37274b04d99f8e62717354fdb832c41e
 this.game.gameInstances.Screen.uiController.notificationManager := New GameObjectStructure(this.game.gameInstances.Screen.uiController,"Int", [0x68])
 this.game.gameInstances.Screen.uiController.notificationManager.notificationDisplay := New GameObjectStructure(this.game.gameInstances.Screen.uiController.notificationManager,"Int", [0x18])
 this.game.gameInstances.Screen.uiController.notificationManager.notificationDisplay.welcomeBackNotification := New GameObjectStructure(this.game.gameInstances.Screen.uiController.notificationManager.notificationDisplay,"Int", [0x348])
