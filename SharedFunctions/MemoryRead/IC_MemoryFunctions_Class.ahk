@@ -64,7 +64,7 @@ class IC_MemoryFunctions_Class
     ;Updates installed after the date of this script may result in the pointer addresses no longer being accurate.
     GetVersion()
     {
-        return "v2.4.2, 2023-11-21"
+        return "v2.4.4, 2023-11-25"
     }
 
     GetPointersVersion()
@@ -695,10 +695,10 @@ class IC_MemoryFunctions_Class
     {
         val := true
         ; The nextUpgrade pointer could be null if no upgrades are found.
-        if (this.GameManager.game.gameInstances[this.GameInstance].Screen.uiController.bottomBar.heroPanel.activeBoxes[seat - 1].nextupgrade.Read())
+        if (this.GameManager.game.gameInstances[this.GameInstance].Screen.uiController.bottomBar.heroPanel.heroBoxsBySeat[seat].nextupgrade.Read())
         {
             ;TODO Re-Verify this value
-            val := this.GameManager.game.gameInstances[this.GameInstance].Screen.uiController.bottomBar.heroPanel.activeBoxes[seat - 1].nextupgrade.IsPurchased.Read()
+            val := this.GameManager.game.gameInstances[this.GameInstance].Screen.uiController.bottomBar.heroPanel.heroBoxsBySeat[seat].nextupgrade.IsPurchased.Read()
         }
         return val
     }
@@ -798,7 +798,7 @@ class IC_MemoryFunctions_Class
     ReadBrivSlot4ilvl()
     {
         champID := 58, slot := 4
-        return Floor(this.GameManager.game.gameInstances[this.GameInstance].Controller.UserData.LootHandler.LootByHeroID[champID].List[slot-1].Enchant.Read("Double"))
+        return Floor(this.GameManager.game.gameInstances[this.GameInstance].Controller.UserData.LootHandler.LootByHeroID[champID].List[slot-1].Enchant.Read("Double") + 1)
     }
 
     ; Returns the formation array of the formation used in the currently active modron.
@@ -933,7 +933,7 @@ class IC_MemoryFunctions_Class
 
     ReadInventoryChestIDBySlot(slot)
     {
-        return this.GameManager.game.gameInstances[this.GameInstance].Controller.userData.ChestHandler.chestCounts["key", slot].Read()
+        return this.GameManager.game.gameInstances[this.GameInstance].Controller.userData.ChestHandler.chestCounts["key", slot, quickLookup := True].Read()
     }
 
     ReadInventoryChestCountBySlot(slot)
