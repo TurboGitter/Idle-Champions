@@ -195,8 +195,7 @@ this.game.gameInstances.Screen.uiController.topBar.objectiveProgressBox.areaBar.
 this.game.gameInstances.Screen.uiController.bottomBar := New GameObjectStructure(this.game.gameInstances.Screen.uiController,"Int", [0x20])
 this.game.gameInstances.Screen.uiController.bottomBar.levelUpAmount := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar,"Int", [0x438])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar,"Int", [0x380])
-this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel,"List", [0x3b0])
-this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes._CollectionValType := "CrusadersGame.GameScreen.UIComponents.BottomBar.HeroBox"
+this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel,"HashSet", [0x3b0])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.nextUpgrade := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes,"Int", [0x400])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.nextUpgrade.IsPurchased := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.activeBoxes.nextUpgrade,"Char", [0xa8])
 this.game.gameInstances.Screen.uiController.bottomBar.heroPanel.heroBoxsBySeat := New GameObjectStructure(this.game.gameInstances.Screen.uiController.bottomBar.heroPanel,"Dict", [0x3b8])
@@ -214,10 +213,7 @@ this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero := N
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero,"Int", [0x18])
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def.ID := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.hero.def,"Int", [0x10])
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems,"Int", [0x398])
-<<<<<<< HEAD
-=======
 this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack.internalCooldownTimer := New GameObjectStructure(this.game.gameInstances.Screen.uiController.ultimatesBar.ultimateItems.ultimateAttack,"Float", [0xb0])
->>>>>>> 82d0e4fc37274b04d99f8e62717354fdb832c41e
 this.game.gameInstances.Screen.uiController.notificationManager := New GameObjectStructure(this.game.gameInstances.Screen.uiController,"Int", [0x68])
 this.game.gameInstances.Screen.uiController.notificationManager.notificationDisplay := New GameObjectStructure(this.game.gameInstances.Screen.uiController.notificationManager,"Int", [0x18])
 this.game.gameInstances.Screen.uiController.notificationManager.notificationDisplay.welcomeBackNotification := New GameObjectStructure(this.game.gameInstances.Screen.uiController.notificationManager.notificationDisplay,"Int", [0x348])
