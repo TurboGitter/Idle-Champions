@@ -53,6 +53,16 @@ this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.GridSave :
 this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.Buffs := New GameObjectStructure(this.game.gameInstances.Controller.userData.ModronHandler.modronSaves,"Dict", [0x20])
 this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.Buffs._CollectionKeyType := "System.Int32"
 this.game.gameInstances.Controller.userData.ModronHandler.modronSaves.Buffs._CollectionValType := "System.Int32"
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler := New GameObjectStructure(this.game.gameInstances.Controller.userData,"Int", [0x68])
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance := New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetUpgradeHandler,"Dict", [0x20])
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance._CollectionKeyType := "CrusadersGame.Defs.ResetUpgradeDef.ResetEffect"
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance._CollectionValType := "System.Collections.Generic.Dictionary<CrusadersGame.ChampionsGameInstance,CrusadersGame.Effects.Effect>"
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary := New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance,"Dict", [])
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary._CollectionKeyType := "CrusadersGame.Defs.ResetUpgradeDef.ResetEffect"
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary._CollectionValType := "CrusadersGame.Effects.Effect"
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary.def := New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary,"Int", [0x10])
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary.def.BaseEffectKeyParams_k__BackingField := New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary.def,"Int", [0x28])
+this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary.def.BaseEffectKeyParams_k__BackingField.OriginalEffectKey := New GameObjectStructure(this.game.gameInstances.Controller.userData.ResetUpgradeHandler.activeEffectsByInstance.Dictionary.def.BaseEffectKeyParams_k__BackingField,"UTF-16", [0x38])
 this.game.gameInstances.BuffHandler := New GameObjectStructure(this.game.gameInstances,"Int", [0x68])
 this.game.gameInstances.BuffHandler.activeBuffs := New GameObjectStructure(this.game.gameInstances.BuffHandler,"List", [0x20])
 this.game.gameInstances.BuffHandler.activeBuffs._CollectionValType := "CrusadersGame.Defs.BuffDef"
@@ -80,7 +90,7 @@ this.game.gameInstances.Controller.userData.HeroHandler.heroes._CollectionValTyp
 this.game.gameInstances.Controller.userData.HeroHandler.heroes.def := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes,"Int", [0x18])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes.def.name := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes.def,"UTF-16", [0x38])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes.def.ID := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes.def,"Int", [0x10])
-this.game.gameInstances.Controller.userData.HeroHandler.heroes.def.SeatID := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes.def,"Int", [0x1e0])
+this.game.gameInstances.Controller.userData.HeroHandler.heroes.def.SeatID := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes.def,"Int", [0x1ec])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes.effects := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes,"Int", [0xa8])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHashedKeyName := New GameObjectStructure(this.game.gameInstances.Controller.userData.HeroHandler.heroes.effects,"Dict", [0x50])
 this.game.gameInstances.Controller.userData.HeroHandler.heroes.effects.effectKeysByHashedKeyName._CollectionKeyType := "System.Int32"
